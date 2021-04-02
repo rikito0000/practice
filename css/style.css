@@ -1,34 +1,33 @@
 body {
-  color: #082b48;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
+    color: #082b48;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
 
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 a {
-  text-decoration: none;
-  color: #082b48;
+    text-decoration: none;
+    color: #082b48;
 }
 
 a:hover {
-  opacity: .7;
-
+    opacity: .7;
 }
 
 .container {
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
 }
 
 .clear::after {
-  content: "";
-  clear: both;
-  display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
 /*=========================
@@ -36,68 +35,68 @@ header
 =========================*/
 
 header {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .header-left {
-  float: left;
+    float: left;
 }
 
 .header-right {
-  float: right;
+    float: right;
 }
 
 .header-title {
-  font-weight: bold;
-  font-size: 24px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .header-nav-item {
-  float: left;
-  margin-left: 50px;
+    float: left;
+    margin-left: 50px;
 }
 
 .header-nav-item a {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 36px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 36px;
 }
 
 /*=========================
 top
 =========================*/
+
 .top {
-  background-image: url(../img/main-vsual-nontitle.png);
-  background-size: cover;
-  padding: 80px 0;
+    background-image: url(../img/main-vsual-nontitle.png);
+    background-size: cover;
+    padding: 80px 0;
 }
 
 .top-title {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .top-subtitle {
-  font-size: 18px;
-  text-align: center;
+    font-size: 18px;
+    text-align: center;
 }
-
 
 /*=========================
 section共通クラス
 =========================*/
 
 .section {
-  padding: 60px;
+    padding: 60px 0;
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /*=========================
@@ -105,81 +104,178 @@ about
 =========================*/
 
 .about-left {
-  float: left;
-  width: 48%;
+    float: left;
+    width: 48%;
 }
 
 .about-right {
-  float: right;
-  width: 48%;
+    float: right;
+    width: 48%;
 }
-
 
 /*=========================
 course
 =========================*/
 
 .course {
-  background-color: #e3fcf4;
+    background-color: #e3fcf4;
 }
 
 .course-wrapper {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .course-item {
-  width: 30%;
+    width: 30%;
 }
 
 /*=========================
-course
+footer
 =========================*/
 
 .contact-message {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 input[type="email"] {
-  width: 600px;
-  border: 3px solid #d8d8d8;
-  font-size: 18px;
-  display: block;
-  margin: auto;
-  padding: 15px;
-  border-radius: 999px;
-  margin-bottom: 20px;
+    width: 600px;
+    border: 3px solid #d8d8d8;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 999px;
+    margin-bottom: 20px;
 }
 
 .btn {
-  padding: 20px 60px;
-  display: inline-block;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 4px;
-  border: none;
+    padding: 20px 60px;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
 }
 
 .btn:hover {
-  opacity: .7;
-  cursor: pointer;
+    opacity: .7;
+    cursor: pointer;
 }
 
 .btn-register {
-  background-color: #ec6d64;
-  display: block;
-  margin: auto;
+    background-color: #ec6d64;
+    display: block;
+    margin: auto;
 }
 
 footer {
-  background-color: #082b48;
-  color: #fff;
-  padding: 20px 0;
+    background-color: #082b48;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .copy-right {
-  font-size: 12px;
-  float: right;
+    font-size: 12px;
+    float: right;
+}
+
+/*=========================
+スマホ用表示
+=========================*/
+
+@media only screen and (max-width: 767px) {
+    .clear::after {
+        content: none;
+    }
+    /*=========================
+  header
+=========================*/
+    .header-left {
+        float: none;
+    }
+    .header-right {
+        float: none;
+    }
+    .header-title {
+        text-align: center;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-nav-item {
+        float: none;
+        margin: 0;
+    }
+    /*=========================
+top用表示
+=========================*/
+    .top {
+        padding: 120px 0;
+    }
+    .top-title {
+        font-size: 32px;
+    }
+    .top-subtitle {
+        font-size: 24px;
+    }
+    /*=========================
+section共通クラス
+=========================*/
+    .section {
+        padding: 80px 0;
+    }
+    .section-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .section p {
+        font-size: 14px;
+    }
+    /*=========================
+about
+=========================*/
+    .about-left {
+        float: none;
+        width: 100%;
+    }
+    .about-right {
+        float: none;
+        width: 100%;
+    }
+    /*=========================
+course
+=========================*/
+    .course-item {
+        width: 100%;
+    }
+    .course-wrapper {
+        flex-wrap: wrap;
+    }
+    /*=========================
+contact
+=========================*/
+    input[type="email"] {
+        width: 100%;
+        border: 3px solid #d8d8d8;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 15px;
+        border-radius: 999px;
+        margin-bottom: 20px;
+    }
+    /*=========================
+footer
+=========================*/
+    .copy-right {
+        font-size: 10px;
+        text-align: center;
+        float: none;
+    }
 }
